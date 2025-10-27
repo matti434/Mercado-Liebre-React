@@ -4,16 +4,16 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+
 const Menu = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
+    <Navbar expand="lg" className="bg-body-tertiary ">
+      <Container className="d-flex justify-content-between">
         <Navbar.Brand as={Link} to="/">MercadoLibre</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
             <NavDropdown title="Cuenta" id="basic-nav-dropdown"> 
               <NavDropdown.Item href="#login">Login</NavDropdown.Item>
               <NavDropdown.Item href="#register">Register</NavDropdown.Item>
