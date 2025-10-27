@@ -12,15 +12,15 @@ const Menu = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/inicio" href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Productos</Nav.Link> {/* Mejor nombre */}
-            <NavDropdown title="Cuenta" id="basic-nav-dropdown"> {/* Título más descriptivo */}
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
+            <NavDropdown title="Cuenta" id="basic-nav-dropdown"> 
               <NavDropdown.Item href="#login">Login</NavDropdown.Item>
               <NavDropdown.Item href="#register">Register</NavDropdown.Item>
               <NavDropdown.Item href="#contact">Contact</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#cart">
-                <FaShoppingCart size={20} className="me-2" /> {/* Agregué margen */}
+                <FaShoppingCart size={20} className="me-2" /> 
                 Carrito
               </NavDropdown.Item>
             </NavDropdown>

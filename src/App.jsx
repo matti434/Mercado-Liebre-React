@@ -7,9 +7,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
+          <Menu>
+            <Home/>
+          </Menu>
         <main>
-          <Menu></Menu>
-          <Routes></Routes>
+          <Routes>
+            <Route path="/" element={<Home />}/>
+          </Routes>
         </main>
       </BrowserRouter>
     </>
