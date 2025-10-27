@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from './Componentes/pages/Login'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Menu from "./Componentes/shared/Menu";
+import Home from "./Componentes/pages/Home";
 function App() {
-
   return (
-    <> 
-    <Login/>
+    <>
+      <BrowserRouter>
+        <main>
+          <Menu></Menu>
+          <Routes></Routes>
+        </main>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
